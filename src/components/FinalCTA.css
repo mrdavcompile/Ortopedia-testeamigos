@@ -1,0 +1,32 @@
+.final-cta {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: 140px 0;
+}
+
+.final-cta h2 {
+  color: var(--paper);
+  font-size: 44px;
+  max-width: 16ch;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.final-cta p {
+  color: #b9b7a6;
+  font-size: 17px;
+  max-width: 52ch;
+  margin: 22px auto 0;
+  line-height: 1.65;
+}
+
+.final-cta .btn-cta {
+  margin-top: 38px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.final-cta .btn-cta:hover {
+  background: var(--white);
+}

@@ -1,0 +1,100 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(243, 240, 231, 0.86);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--steel);
+  display: inline-block;
+}
+
+.nav-primary {
+  display: flex;
+  gap: 36px;
+  font-size: 14.5px;
+}
+
+.nav-primary a {
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+
+.nav-primary a:hover {
+  color: var(--ink);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 18px 22px 26px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .nav-primary {
+    display: none;
+  }
+  .header-right .btn-ghost {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
